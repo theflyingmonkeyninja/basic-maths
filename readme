@@ -4,8 +4,7 @@ Python code that can be used  for
 computing integrals (trapz rule, simpson rule, gauss integration) 
 solving differential equation (euler method, range kutta method)
 solving stochastic differential equations (Euler–Maruyama method)
-LMS algorithm
-normalised LMS algorithm
+Optimisation LMS algorithm, normalised LMS algorithm, gradiant descent, stochastic gradient descent
 brownian motion (ABM GBM)
 
 
