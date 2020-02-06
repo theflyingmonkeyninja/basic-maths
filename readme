@@ -1,0 +1,11 @@
+The repositary contains 
+
+Python code for 
+computing integrals (trapz rule, simpson rule, gauss integration) 
+solving differential equation (euler method, range kutta method)
+solving stochastic differential equations (Euler–Maruyama method)
+LMS algorithm
+normalised LMS algorithm
+brownian motion (ABM GBM)
+
+
