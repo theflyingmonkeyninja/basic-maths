@@ -1,6 +1,6 @@
 The repositary contains 
 
-Python code for 
+Python code that can be used  for 
 computing integrals (trapz rule, simpson rule, gauss integration) 
 solving differential equation (euler method, range kutta method)
 solving stochastic differential equations (Euler–Maruyama method)
