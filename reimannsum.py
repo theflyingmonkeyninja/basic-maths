@@ -16,6 +16,7 @@ class reimannsum:
         self.a = a;
         self.b = b;
         self.h = (b-a);
+        self.N = N;
         
         
     def rect(self,y,x):
@@ -24,10 +25,10 @@ class reimannsum:
         return rsum
     
     def trapz(self,y,x):
-        delta = self.h/(2*self.N);
-        rsum = y[1]+y[-1];
-        i = 0;
-        while i < len(x):
+        delta=self.h/(2*(self.N-1));
+        rsum = y[0]+y[-1];
+        i = 1;
+        while i < len(x)-1:
             rsum += 2 * y[i]
             i += 1
         rsum = rsum*delta;
@@ -36,22 +37,19 @@ class reimannsum:
     def simpsons(self, y,x):
         rsum = 0;
         i = 0
-        while i<= len(x):
-            if i == 0 or i == len(x):
+        while i<= len(x)-1:
+            if i == 0 or i == len(x)-1:
                 rsum+= y[i]
             elif i % 2 != 0:
                 rsum+= 4 * y[i] 
             else:
                 rsum+= 2 * y[i]
             i+= 1
-            rsum = rsum * (self.h / 3) 
             
-            return rsum
+        rsum = rsum * (self.h /((len(x)-1)*3)) 
+        return rsum
                 
-  ## to be added gauss integration               
                 
+#To include gauss integration                 
             
         
-
- 
-
