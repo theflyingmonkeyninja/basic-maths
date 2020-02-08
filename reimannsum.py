@@ -24,7 +24,7 @@ class reimannsum:
         return rsum
     
     def trapz(self,y,x):
-        delta=self.h/(2*self.N);
+        delta = self.h/(2*self.N);
         rsum = y[1]+y[-1];
         i = 0;
         while i < len(x):
@@ -48,20 +48,10 @@ class reimannsum:
             
             return rsum
                 
-                
+  ## to be added gauss integration               
                 
             
         
 
  
 
-
-#def reimannsum.simpson():
-#
-#
-#    
-#def reimannsum.trapz():
-#    
-#
-#    
-#def reimannsum.gauss():    
